@@ -239,7 +239,54 @@ const num2 = 10;
 // переписать на switch case
 // вложенные проверки переписать на тернар
 
-// const loginInput = prompt("Введите свой логин");
+const loginInput = prompt("Введите свой логин");
+
+// Вариант 1
+// switch (loginInput) {
+//   case "Админ":
+//     const passwordInput = prompt("Введите свой пароль");
+//     if (passwordInput) {
+//       if (passwordInput === "Я главный") {
+//         console.log("Здравствуйте!");
+//       } else {
+//         console.log("Неверный пароль");
+//       }
+//     } else {
+//       console.log("Отменено");
+//     }
+//     break;
+  
+//   default: console.log("Я вас не знаю");
+// }
+
+// Вариант 2
+// switch (loginInput) {
+//   case "Админ":
+//     const passwordInput = prompt("Введите свой пароль");
+//     switch (passwordInput) {
+//       case "Я главный":
+//         console.log("Здравствуйте!");
+//       default: console.log("Неверный пароль");
+//         // default: console.log("Отменено");
+//     }
+  
+//   default: console.log("Я вас не знаю");
+// }
+
+// Вариант 3
+// switch (loginInput) {
+//   case "Админ":
+//     const passwordInput = prompt("Введите свой пароль");
+//     if (passwordInput) {
+//       passwordInput === "Я главный"? console.log("Здравствуйте!") : console.log("Неверный пароль");
+//       }
+//     else {
+//       console.log("Отменено");
+//     }
+//     break;
+  
+//   default: console.log("Я вас не знаю");
+// }
 
 // if (loginInput === "Админ") {
 //   const passwordInput = prompt("Введите свой пароль");
